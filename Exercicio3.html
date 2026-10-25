@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário simples-Novos campos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+</head>
+<body class="bg-danger-subtle">
+    <p class="mb-3 ">
+    Preencha os campos abaixo.
+</p>
+    <form>
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">
+            Nome
+        </label>
+        <input type="text" class="form-control" id="nome"
+        placeholder="Digite seu nome"
+        required>
+
+    </div>
+    
+    <div class="mb-3">
+        <label for="email" class="form-label">
+            E-mail
+        </label>
+        <input type="email" class="form-control" id="email"
+        placeholder="nome@email.com"
+        required>
+            <div class="mb-3">
+        <label for="telefone" class="form-label">
+            Telefone
+        </label>
+        <input type="tel" class="form-control" id="telefone"
+        placeholder="(47) 9999-9999">
+
+    </div>
+    <div class="mb-3">
+        <label for="cidade" class="form-label">
+            Cidade
+        </label>
+        <select id="cidade"
+        class="form-select" required>
+        <option value="">Selecione uma cidade</option>
+        <option value="1">Brusque</option>
+        <option value="2">Itajai</option>
+        <option value="3">Blumenau</option>
+        <option value="4">Gaspar</option>
+    </select>
+    </div>
+    <div class="mb-3">
+        <label for="observacao" class="form-label">
+            Observação
+        </label>
+        <textarea 
+        id="observacao"
+        class="form-control"
+        rows="4"
+        placeholder="Digite uma Obeservação"
+        >
+</textarea>
+    </div>
+
+    </div>
+    </form>
+    <button type="submit"
+            class="btn btn-primary w-100">
+            Enviar
+    </button>
+    
+</body>
+</html>

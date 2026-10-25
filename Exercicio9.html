@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    
+</head>
+<body class="bg-danger-subtle">
+    <h1 class="text-center mt-5 mb-5"> Cadastro de eventos </h1>
+    <main class="container mt-5 mb-5"> 
+
+<form id="formCadastro">
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">
+            Nome do Evento
+        </label>
+        <input type="text" class="form-control" id="nome"
+        placeholder="Digite o nome do evento"
+        required>
+
+    </div>
+    
+    <div class="mb-3">
+        <label for="data" class="form-label">
+            Data do Evento
+        </label>
+        <input type="date" class="form-control" id="data"
+        required>
+
+    </div>
+
+    </div>
+    <div class="mb-3">
+        <label for="cidade" class="form-label">
+            Locas do Evento
+        </label>
+        <select id="cidade"
+        class="form-select" required>
+        <option value="">Selecione uma cidade</option>
+        <option value="1">Brusque</option>
+        <option value="2">Itajai</option>
+        <option value="3">Blumenau</option>
+        <option value="4">Gaspar</option>
+    </select>
+    </div>
+    <div class="mb-3">
+        <label for="tipoevento" class="form-label">
+            Tipo do Evento
+        </label>
+        <select id="tipoevento"
+        class="form-select" required>
+        <option value="">Selecione o tipo do evento</option>
+        <option value="1">Palestra</option>
+        <option value="2">Show</option>
+        <option value="3">Teatro</option>
+        <option value="4">Seminário</option>
+    </select>
+    </div>
+    <div class="mb-3">
+        <label for="observacao" class="form-label">
+            Observação
+        </label>
+        <textarea 
+        id="observacao"
+        class="form-control"
+        rows="4"
+        placeholder="Digite uma Obeservação"
+        >
+</textarea>
+    </div>
+
+    <button type="submit"
+            class="btn btn-primary w-100">
+            Enviar
+    </button>
+
+    <div id="mensagemSucesso"
+    class="alert alert-success mt-3 d-none" role="alert">
+Cadastro efetuado com sucesso!
+</div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
